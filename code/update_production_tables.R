@@ -42,13 +42,8 @@ all_tables <- c("agecomp", "sizecomp", "biomass", "cpue")
 detailed_notes <- 
   "Run completed by: Duane Stevenson
  
--- This run was conducted primarily to update cpue, biomass, and sizecomp after the Northern Bering Sea 2025 bottom trawl survey.
+-- This run was conducted to update agecomp tables after receiving age data from walleye pollock otoliths collected on the 2025 EBS bottom trawl survey.
 
--- The skate complex aggregation (400) and Bathyraja spp. aggregation (405) was adjusted to account for the Genus name change Arctoraja parmifera (formerly Bathyraja parmifera) for all survey regions. See details in github issue: https://github.com/afsc-gap-products/gap_products/issues/78.
-
--- Age compositions were updated to account for new GOA northern rock sole (2021) and NBS pollock (2023) aged otolith data. 
-
--- A Bering sea slope Kamchatka flounder specimen record with a negative age was corrected. This correction slightly adjusted the age compositions. See details in github issue: https://github.com/afsc-gap-products/data-requests/issues/108.
 "
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
