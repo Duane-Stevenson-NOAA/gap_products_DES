@@ -44,9 +44,8 @@ stage_tables <- readRDS(file = "temp/stage_tables.RDS")
 detailed_notes <-
   "Run completed by: Zack Oyafuso
 
--- This run was conducted to test out a new way of updating the four main table (CPUE, BIOMASS, SIZECOMP, AGECOMP) using staging tables.
+-- Updating age composition for recently age reads for Aleutian Islands 2024 blackspotted rockfish and Atka mackerel; Gulf of Alaska 2025 Pacific cod, northern rockfish, and rex sole; Eastern Bering Sea 2025 Pacific cod; Northern Bering Sea 2025 Pacific cod
 
--- Removed commercial carb data from CPUE tables.
 "
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,5 +113,5 @@ for (itable in c("cpue", "biomass", "sizecomp", "agecomp")) {
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 source("functions/summarize_gp_updates.R")
 summarize_gp_updates(channel = gapproducts_channel,
-                     time_start = "26-JUN-26 11.00.00 AM",
-                     time_end = "26-JUN-26 11.59.00 PM")
+                     time_start = "18-AUG-26 11.00.00 AM",
+                     time_end = "18-AUG-26 11.59.00 PM")
