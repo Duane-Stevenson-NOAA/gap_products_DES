@@ -10,17 +10,14 @@
 ##                Standard GAP survey data products in this repository include
 ##                CPUE, Biomass, Size Composition, and Age Composition. Tables
 ##                that are served to the Alaska Fisheries Information Network
-##                (AKFIN) and Fisheries One Stop Shop (FOSS) data portals are
-##                also housed here as materialized views that are often 
-##                mirrors of these standard data tables or queries of tables in 
-##                RACEBASE/RACE_DATA. 
+##                (AKFIN) are also housed here as materialized views that are 
+##                often mirrors of these standard data tables or queries of 
+##                tables in RACEBASE/RACE_DATA. 
 ##                
-##                The GAP_PRODUCTS Oracle schema houses the four standard data
-##                product tables and views and will be updated at least twice a
-##                year: once prior to the survey season to incorporate new age
-##                data and vouchered specimens that were processed after the 
-##                prior year's survey and at least once after the survey season
-##                following the conclusion of each region's survey. 
+##                The GAP_PRODUCTS Oracle schema is updated twice a year: once 
+##                prior to the survey season to incorporate new age data and 
+##                after the survey season following the conclusion of each 
+##                region's survey. 
 ##                
 ##                **DISCLAIMER**: Each script is self-contained. Do not source 
 ##                this script. Each of the following scripts needs to be run 
@@ -74,10 +71,6 @@ file.edit("code/direct_upload_akfin.R")
 ##   Archive GAP_PRODUCTS  ----
 ##   Archive the bits that would allow one to reproduce the standard data 
 ##   tables. The session info and package versions are also .csv files in the 
-##   temp/folder.
+##   temp/folder. ** Check your specific path to GAP_PRODUCTS_Archives **
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-source("functions/archive_gap_products.R") 
-archive_gap_products(path = "temp/", 
-                     archive_path = "V:/GAP_PRODUCTS_Archives")
-
-
+file.edit("code/archive_gap_products.R") 
